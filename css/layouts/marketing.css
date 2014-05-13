@@ -132,7 +132,8 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #1f8dd6;
+    /*background: #db2121;*/
+    background: #db2121;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -159,7 +160,7 @@ a.pure-button-primary {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    border: 3px solid white;
+    border: 5px solid white;
     padding: 1em 1.6em;
     font-weight: 100;
     border-radius: 5px;
@@ -211,7 +212,7 @@ a.pure-button-primary {
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
-    background: #2d3e50;
+    background: #db2121;
     color: #aaa;
 }
 
