@@ -12,7 +12,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
     <!-- Template Styles -->
     <link href="css/style.css" rel="stylesheet" media="screen">
-      </head>
+  </head>
   <body>	  
 	   <!-- HEADER -->	  
 	  <header class="overlay" style = 'background-color:rgba(255,255,255,.5);'>
@@ -22,7 +22,7 @@
                     <br><br><br><br><br><br><br><br>
                     <div class = 'overlay' style = 'background-color:rgba(0,0,0,.5);'>
                           <h1>Kloud Kontacts</h1>
-                          <p class="lead"><strong>Konnect Seamlessly.</strong></p>
+                          <p class="lead" style="padding-bottom:10px"><strong>Konnect Seamlessly.</strong></p>
                     </div>
 				</div>	  
 			</div>    
@@ -35,160 +35,18 @@
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-md-offset-2 col-md-8">
-					 <h1>Login</h1>
-				  </div>
+					  <h1 style="color:#026db0;">Login</h1>
+                      <button type="submit" class="btn" style="background:#3b5998;color:white;" onclick="loginBruh();">Sign Up with Facebook</button>
+                  </div>
 			  </div>
 		  </div>
 	  </section>
-	  
-	  
-	  <!-- DETAILS 
-	      ================================================== -->
-	  <section class="detail">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div id="carousel-example-generic-2" class="carousel slide">
-										
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner">
-					    <div class="item active">
-					      	<div class="row">
-					      		<div class="col-sm-12 col-md-offset-1 col-md-6">
-					      			<h1>Clubs</h1>
-					      			<p style="color:#313131">Join or create different clubs.<br><br>Through our new unique user interface you can create a club and share it with your members instantly. The club is also private, only allowing members with a customized code to join. This provides security while maintaining the ease of using the app.</p>
-					      		</div>
-					      		<div class="col-sm-12 col-md-5">
-					      			<div class="app-screenshot">
-					      				<img src="img/status.gif" class="img-responsive" alt="App Screen 1">
-					      			</div>
-					      		</div>
-					      	</div>
-					    </div>
-					    <div class="item">
-					    	<div class="row">
-					    		<div class="col-sm-12 col-md-offset-1 col-md-6">
-					    			<h1>News</h1>
-					    			<p style="color:#313131">Ability to Check the Latest ews updates.<br><br>With our new news feed, you can check on updates and information from each club in an instant. This will allow members to be updated on the most current events and news.
-</p>
-					    		</div>
-					    		<div class="col-sm-12 col-md-5">
-					    			<div class="app-screenshot">
-					    				<img src="img/status.gif" class="img-responsive" alt="App Screen 2">
-					    			</div>
-					    		</div>
-					    	</div>
-						</div>
-					    <div class="item">
-					      <div class="row">
-					      	<div class="col-sm-12 col-md-offset-1 col-md-6">
-					      		<h1>Events</h1>
-					      		<p style="color:#313131">Ability to Create Events. <br><br>Our new event creator allows the admin to pick a date and location for each event. Also, when the event is created, each member will be notified via e-mail instantly. Members also have an option of RSVP, allowing the admins to know who can attend ahead of time. This will keep both members and admins updated constantly.</p>
-					      	</div>
-					      	<div class="col-sm-12 col-md-5">
-					      		<div class="app-screenshot">
-					      			<img src="img/status.gif" class="img-responsive" alt="App Screen 3">
-					      		</div>
-					      	</div>
-					      </div>
-					    </div>
-					  </div>
-					
-					  <!-- Indicators -->
-					  <ol class="carousel-indicators">
-					    <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
-					    <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
-					  </ol>		
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	  
-	  <!-- FEATURES
-	      ================================================== -->
-	  <section class="features">
-		  <div class="container">
-			  <div class="row">
-				
-				  <div class="col-md-4">
-					  <div class="circle"><i class="icon-check"></i></div>
-					  <h2>Attendance</h2>
-					  <p>Take and track attendance.<br><br>With our never-before-seen method, taking attendance has never been easier. With only a few clicks, an excel spreadsheet containing of the attendance of each member for every event can be created. This feature is only allowed to admins of the club, allowing the admins to withhold sensitive information.</p>
-				  </div>
-				
-				  <div class="col-md-4">
-					  <div class="circle"><i class="icon-mail"></i></div>
-					  <h2>Email Notifications</h2>
-					  <p>Notify your members immediately.<br><br>With our new email notifications, your members will receive instant notifications of the latest events and news. This will allow constant communication and collaboration between members and admins.</p>
-				  </div>
-				 
-				  <div class="col-md-4">
-					  <div class="circle"><i class="icon-flag"></i></div>
-					  <h2>Push Notifications.</h2>
-					  <p>Even faster notification.<br><br>Once push notifications are implemented, communication with your members will seem effortless. They will be notified through their phones instantly and the latest news and events will be at the palm of their hands.</p>
-				  </div>
-				  
-			  </div>
-		  </div>
-	  </section>
-	  
-	
-	 <!-- SOCIAL -->
-
+      
+      <!-- SOCIAL -->
 	  <section class="social">
 	  	<div class="container">
 	  		  <div class="row">
-	  			  <div align="center" class="col-md-12">
-	  			  	<h2>Contact Us:</h2>
-					<form name="htmlform" method="post" action="mail.php">
-<table width="450px">
-</tr>
-<tr>
- <td valign="top">
-  <label for="first_name"></label>
- </td>
- <td valign="top">
-  <input  type="text" class="form-control" placeholder="First Name" name="first_name" maxlength="50" size="30">
- </td>
-</tr>
- 
-<tr>
- <td valign="top">
-  <label for="last_name"></label>
- </td>
- <td valign="top">
-  <input  type="text" class="form-control" placeholder="Last Name" name="last_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="email"></label>
- </td>
- <td valign="top">
-  <input  type="text" class="form-control" placeholder="Email Address" name="email" maxlength="80" size="30">
- </td>
- 
-</tr>
-<tr>
- <td valign="top">
-  <label for="comments"></label>
- </td>
- <td valign="top">
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6" class="form-control" placeholder="Comments"></textarea>
- </td>
- 
-</tr>
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" class="btn btn-primary btn-lg" value="Submit"> 
- </td>
-</tr>
-</table>
-</form> 			  
-	  			   </div>
+	  			  <div align="center" class="col-md-12"></div>
 	  		  </div>
 	  	  </div>	  
 	  </section>
@@ -219,6 +77,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/animatescroll.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/retina-1.1.0.min.js"></script>
-  	
+    <script type='text/javascript'src='https://cdn.firebase.com/js/simple-login/1.5.0/firebase-simple-login.js'></script>      
+    <script src="js/main.js"></script>
+ </body> 	
 </html>
