@@ -6,6 +6,7 @@ var auth = new FirebaseSimpleLogin(chatRef, function(error, user) {
   } else if (user) {
     // user authenticated with Firebase
     console.log('User ID: ' + user.uid + ', Provider: ' + user.provider);
+    $('#stuff').empty();
   } else {
     // user is logged out
   }
@@ -13,5 +14,4 @@ var auth = new FirebaseSimpleLogin(chatRef, function(error, user) {
 function loginBruh()
 {
     auth.login('facebook');
-    alert("run");
 }
