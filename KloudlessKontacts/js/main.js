@@ -6,7 +6,7 @@ var auth = new FirebaseSimpleLogin(chatRef, function(error, user) {
   } else if (user) {
     // user authenticated with Firebase
     console.log('User ID: ' + user.uid + ', Provider: ' + user.provider);
-    $('#stuff').empty().appent('<h1 style="color:#026db0;">Login</h1><button type="submit" class="btn" style="background:#3b5998;color:white;" onclick="loginBruh();">Sign Up with Facebook</button>');
+    $('#stuff').empty().append('<h1 style="color:#026db0;">Login</h1><button type="submit" class="btn" style="background:#3b5998;color:white;" onclick="loginBruh();">Sign Up with Facebook</button>');
   } else {
     // user is logged out
   }
