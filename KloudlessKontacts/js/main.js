@@ -10,9 +10,6 @@ var auth = new FirebaseSimpleLogin(chatRef, function(error, user) {
     // user is logged out
   }
 });
-$( document ).ready(function() {
-    console.log( "ready!" );
-});
 function loginBruh()
 {
     auth.login('facebook');
