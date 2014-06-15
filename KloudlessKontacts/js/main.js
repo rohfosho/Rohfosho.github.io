@@ -15,4 +15,3 @@ function loginBruh()
     auth.login('facebook');
     alert("run");
 }
-o
