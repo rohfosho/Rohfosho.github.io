@@ -1,0 +1,17 @@
+@-webkit-keyframes myfirst {
+    0% {background: #db2121;}
+    20% {background: #ffba00;}
+    40% {background: #1bb0f9;}
+    60% {background: #222222;}
+    80% {background: #5AB84D;}
+    100% {background: #db2121;}
+}
+
+@keyframes myfirst {
+    0% {background: #db2121;}
+    20% {background: #ffba00;}
+    40% {background: #1bb0f9;}
+    60% {background: #222222;}
+    80% {background: #5AB84D;}
+    100% {background: #db2121;}
+}

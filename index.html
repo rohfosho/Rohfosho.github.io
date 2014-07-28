@@ -15,20 +15,44 @@
     -webkit-border-radius: 100px;        
 } 
 </style>
+<link rel="stylesheet" href="css/custom.css">s
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script>    
     jQuery(function($){        
-        var kkeys = [], konami = "72,69,76,76,76,76,89,69,65,72";
+        var kkeys = [], ckeys = [], lkeys = [], konami = "38,38,40,40,37,39,37,39,66,65", lolzard = "76,79,76,90,65,82,68", clubbedin = "67,76,85,66,66,69,68,73,78";
         $(document).keydown(function(e)
         {
             console.log(e.keyCode);
             kkeys.push( e.keyCode );
+            ckeys.push( e.keyCode );
+            lkeys.push( e.keyCode );
             if( kkeys.toString().indexOf( konami ) >= 0 )
             {
             $(document).unbind('keydown',arguments.callee);
             //Any message or event you want goes here
-                $("#maintitle").empty().append("#HELLLLYEAH");                
+                $("#maintitle").empty().append("LOLZARD");
+                $("#landing").css("-webkit-animation","myfirst 10s ease-out infinite");
+                setTimeout(function (){$("#maintitle").empty().append("Rohith Varanasi");},2500);
+                window.open("http://clubbedinapp.com","_tab");
             }
+            else if( lkeys.toString().indexOf( lolzard ) >= 0 )
+            {
+            $(document).unbind('keydown',arguments.callee);
+            //Any message or event you want goes here
+                $("#maintitle").empty().append("LOLZARD");
+                $("#landing").css("-webkit-animation","myfirst 10s ease-out infinite");
+                setTimeout(function (){$("#maintitle").empty().append("Rohith Varanasi");},2500);
+                
+            }
+            else if( ckeys.toString().indexOf( clubbedin ) >= 0 )
+            {
+            $(document).unbind('keydown',arguments.callee);
+            //Any message or event you want goes here
+                $("#maintitle").empty().append("<a href='http://clubbedinapp.com' target='_tab' style='text-decoration:none;color:#007fbe;font-weight:bold;'>CLICK 4 THE GOOD STUFF</a>");
+                $("#landing").css("-webkit-animation","myfirst 10s ease-out infinite");
+                setTimeout(function (){$("#maintitle").empty().append("Rohith Varanasi");},5000);
+                
+            }        
         }); 
     });
     var isActive;
@@ -40,7 +64,7 @@
     
     window.onblur = function () { 
       isActive = false;
-        document.title = "Coem @ me bor";
+        document.title = "Baby come back!";
     };
     
     function reset()
@@ -71,7 +95,7 @@
 </head>
 <body>
 
-<div class="splash-container">
+<div class="splash-container" id="landing">
     <div class="splash">
         <h1 id="maintitle" class="splash-head" onclick="reset();">Rohith Varanasi</h1>
         <p class="splash-subhead">
@@ -146,7 +170,7 @@
                     iOS Programming (Almost)
                 </h3>
                 <p>
-                    I'm learning objective-C! I don't have a Mac so it's a bit tough.
+                    I'm learning Swift!
                 </p>
             </div>
             <div class="l-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-4">
@@ -186,7 +210,7 @@
             <h2 class="content-head content-head-ribbon is-center" style="font-size:36px;"><b>Robotics</b></h2>
 
             <p style="color:white" align="center">
-                I code and build and code and build and code and build and on and on and on. 
+                I <i class="fa fa-heart"></i> tinkering with robots. 
                 Robotics is my passion along with programming. 
                 I am a part of team 5205 SyBorgs. 
                 Check out our website by clicking on the logo.

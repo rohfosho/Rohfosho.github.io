@@ -128,11 +128,9 @@ a.pure-button-primary {
 
 /*
  * -- SPLASH STYLES --
- * This is the blue top section that appears on the page.
  */
 
 .splash-container {
-    /*background: #db2121;*/
     background: #db2121;
     z-index: 1;
     overflow: hidden;
