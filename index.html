@@ -6,42 +6,72 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="description" content="" />
+  <style>
+    .links {
+      text-align: center; 
+      margin-top: 48px;
+    }
+    @media only screen and (min-width: 992px) {
+      .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        grid-template-areas: "left" "right";
+        align-content: start;
+      }
 
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<style>
-        .center.icons > li > a {font-size:24px; left:0; left:auto; display:block; font-family: sans-serif;}
-        .center > a > i.fa {font-size:24px; margin:12.5px;}
-        .drop {box-shadow: 0px 0px 10px #888888;}
-	</style>
-	<!-- Javascript -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/kickstart.js"></script>
+      p { width: 75%;}
+    }
+    body { margin: 16px 48px;}
+    html { font-family: sans-serif; }
+    .left { grid-area: "left" }
+    .right { grid-area: "right" }
+    .xp-block { 
+      background: #fafafa;
+      padding: 8px 16px 32px 16px;
+      margin: 16px 0;
+    }
+  </style>
 </head>
 <body>
-<div class="grid">
-	<div class="col_12" style="margin-top:100px;">
-		<h1 style="color:#b71f1f;font-size:40px;" class="center">Hi</h1>
-		<h4 style="color:rgba(155, 62, 62, 0.6);margin-bottom:10px;font-size:22px;" class="center">I do dope shit</h4>
-	</div>
-    <hr style="margin-top:-15px;margin-bottom:10px;color:#3a3a3a;">
-	<!--<ul class="center icons">
-		<li><a target="_tab" href="http://cosmosbrowser.org">Cosmos Browser</a></li>
-		<li><a target="_tab" href="http://challengepost.com/software/magic-board">Magic Board</a></li>
-		<li><a target="_tab" href="http://challengepost.com/software/airduino">Airduino</a></li>
-		<li><a target="_tab" href="http://mailsweep.me">Mailsweep</a></li>
-		<li><a target="_tab" href="http://youplayfm.com">YouPlay Radio</a></li>
-		<li><a target="_tab" href="http://clubbedinapp.com">Clubbed In</a></li>
-		<li><a target="_tab" href="http://tapapp.github.io">Tap</a></li>
-  </ul>-->
-    <div class="center">
-        <a href="https://github.com/rohfosho" target="_tab"><i class="fa fa-github-square"></i></a>
-        <a href="https://twitter.com/br0hith" target="_tab"><i class="fa fa-twitter-square"></i></a>
-        <a href="mailto:rohith@cosmosbrowser.org" target="_tab"><i class="fa fa-envelope-square"></i></a>
+  <div class="grid">
+    <div class="left">
+      <h1> Rohith Varanasi </h1>
+      <p> Welcome! I'm a software engineer working with Android and backend development. 
+          As you can tell, I'm not much of a web developer. I'm pretty bad at CSS so I 
+          figured I would just keep things simple. </p>
+      <p> I have a lot of experience working with Android as well as APIs and backend systems.<p>
+      <p> I recently left my company, Lunar Wireless. I'm going to be spending some time traveling.</p>
+      <p> I'm looking to take on some contract work for <strong>interesting projects</strong> and interesting clients.</p>
+      <p> Shoot me an email at <a href="mailto:gmail@rohithvaranasi.com">gmail@rohithvaranasi.com</a>, maybe we can work together.</p>
     </div>
-    <h6 style="color:#b71f1f;margin-bottom:40px;" class="center"><p>I also like to travel<br>NYC <i class="fa fa-plane"></i> SFO</p></h6>
-</div> <!-- End Grid -->
+    <div class="right">
+      <h1> Experience & Projects </h1>
+      <div class="xp-block">
+        <h4> <a target="_blank" href="https://lunarwireless.com">Lunar Wireless</a> - Founder, CTO </h4> 
+        Founded and led the engineering team from 2015 to 2018. I had a hand in all parts of the technology,
+            from writing code for our suite of Android applications to building our backend APIs and deployment process 
+            to maintaining and developing our infrastructure. I also implemented our integration with Sprint Wireless's 
+            infrastructure.
+      </div>
+      <div class="xp-block">
+        <h4> <a target="_blank" href="https://news.ycombinator.com/item?id=8376387">Cosmos Browser</a> - MHacks IV </h4> 
+        Built a web browser for Android that allowed users to go online without a wifi or data connection. Rendered webpages 
+        serverside, compressed and encoded the rendered HTML, and then sent it to the device via text messages. The device 
+        pieced together the text messages, decoded and decompressed the HTML and then injected it into a webview. 
+      </div>
+      <div class="xp-block">
+        <h4> <a target="_blank" href="https://news.mlh.io/magic-board-check-arm-gesture-controlled-skateboard-hack-09-28-2014">Magic Board</a> - PennApps X</h4> 
+        Hacked a Boosted Board to replace the controller with arm gestures that were recognized through an MYO arm band. Won 2nd 
+        place overall at PennApps X. Worked with a Tessel (<a href="tessel.io" target="_blank">tessel.io</a>) to modify the stock
+        Boosted Board controller and hacked it to work with a Servo motor to emulate human interaction.
+      </div>
+    </div>
+  </div>
+  <div class="links">
+    <a href="https://github.com/rohfosho" target="_blank">github</a> | 
+    <a href="https://twitter.com/br0hith" target="_blank">twitter</a> |
+    <a href="https://keybase.io/brohith" target="_blank">keybase</a>
+  </div>
 </body>
 </html>
