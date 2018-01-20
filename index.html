@@ -24,16 +24,21 @@
         grid-template-areas: "left" "right";
         align-content: start;
       }
+      h4 {
+        margin: 4px 0 16px;
+      }
     }
-
+    
     @media only screen and (max-width: 961px) {
       body { width: 75%; }
     }
+
     @media only screen and (max-width: 480px) {
       body { width: 80%; }
       .left { margin-bottom: 32px; }
       h1 { margin-bottom: 0;}
     }
+
     body { margin: 32px auto;}
     html { font-family: 'Exo', sans-serif; }
     .left { grid-area: "left";}
