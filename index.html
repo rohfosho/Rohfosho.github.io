@@ -9,12 +9,11 @@
 	<meta name="description" content="" />
   <link href="https://fonts.googleapis.com/css?family=Comfortaa|Exo|Oxygen|Rubik" rel="stylesheet">
   <style>
-    .links {
-      text-align: left; 
-      margin-top: 48px;
+    * {
+      box-sizing: border-box;
     }
     @media only screen and (min-width: 961px) {
-      body { width: 60%; }
+      body { width: 100%; max-width: 960px;}
       .left { text-align: left; margin-left: 32px; }
       .right { text-align: left; margin-left: 32px; }
       .grid {
@@ -27,16 +26,35 @@
       h4 {
         margin: 4px 0 16px;
       }
+
+      .links {
+        text-align: left; 
+        margin-top: 48px;
+      }
     }
     
     @media only screen and (max-width: 961px) {
-      body { width: 75%; }
+      body { width: 100%; padding: 0 20px;}
+      .links {
+        text-align: center; 
+        margin-top: 48px;
+      }
     }
 
-    @media only screen and (max-width: 480px) {
-      body { width: 80%; }
+    @media only screen and (max-width: 641px) {
+      .links {
+        text-align: center; 
+        margin-top: 48px;
+      }
+    }
+
+    @media only screen and (max-width: 481px) {
       .left { margin-bottom: 32px; }
       h1 { margin-bottom: 0;}
+      .links {
+        text-align: center; 
+        margin-top: 48px;
+      }
     }
 
     body { margin: 32px auto; color: #525252;}
@@ -63,6 +81,10 @@
     li {
       margin: 0.5em 0;
     }
+    
+    .blue {
+      color: #1F3669;
+    }
 
   </style>
 </head>
@@ -75,7 +97,8 @@
           figured I would just keep things simple. </p>
       <p> I have a lot of experience working with Android as well as APIs and backend systems.<p>
       <p> I recently left my company, Lunar Wireless. I'm going to be spending some time traveling.
-          I'm looking to take on some contract work for <strong>interesting projects</strong> and interesting clients.</p>
+          I'm looking to take on some contract work for <strong class="blue">interesting projects</strong> 
+          and <strong class="blue">interesting clients</strong>.</p>
       <p> Shoot me an email at <a href="mailto:gmail@rohithvaranasi.com">gmail@rohithvaranasi.com</a>, maybe we can work together.</p>
 
       <h1 class="top-margin">🔄 Previously</h1>
