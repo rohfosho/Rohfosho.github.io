@@ -3,16 +3,20 @@
 <head>
 	<!-- META -->
 	<title>Rohith Varanasi</title>
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.ico">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="description" content="" />
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Exo|Oxygen|Rubik" rel="stylesheet">
   <style>
     .links {
       text-align: center; 
       margin-top: 48px;
     }
     @media only screen and (min-width: 961px) {
+      body { width: 60%; }
+      .left { text-align: right; margin-left: 32px; }
+      .right { text-align: left; margin-left: 32px; }
       .grid {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -20,34 +24,46 @@
         grid-template-areas: "left" "right";
         align-content: start;
       }
-
-      p { width: 75%;}
     }
-    body { margin: 16px 48px;}
-    html { font-family: sans-serif; }
-    .left { grid-area: "left" }
-    .right { grid-area: "right" }
+
+    @media only screen and (max-width: 961px) {
+      body { width: 75%; }
+    }
+    @media only screen and (max-width: 480px) {
+      body { width: 80%; }
+      .left { margin-bottom: 32px; }
+      h1 { margin-bottom: 0;}
+    }
+    body { margin: 32px auto;}
+    html { font-family: 'Exo', sans-serif; }
+    .left { grid-area: "left";}
+    .right { grid-area: "right";}
     .xp-block { 
       background: #fafafa;
       padding: 8px 16px 32px 16px;
-      margin: 16px 0;
+      margin: 8px 0;
     }
   </style>
 </head>
 <body>
   <div class="grid">
     <div class="left">
-      <h1> Rohith Varanasi </h1>
+      <h1>🚀  Rohith Varanasi </h1>
       <p> Welcome! I'm a software engineer working with Android and backend development. 
           As you can tell, I'm not much of a web developer. I'm pretty bad at CSS so I 
           figured I would just keep things simple. </p>
       <p> I have a lot of experience working with Android as well as APIs and backend systems.<p>
-      <p> I recently left my company, Lunar Wireless. I'm going to be spending some time traveling.</p>
-      <p> I'm looking to take on some contract work for <strong>interesting projects</strong> and interesting clients.</p>
+      <p> I recently left my company, Lunar Wireless. I'm going to be spending some time traveling.
+          I'm looking to take on some contract work for <strong>interesting projects</strong> and interesting clients.</p>
       <p> Shoot me an email at <a href="mailto:gmail@rohithvaranasi.com">gmail@rohithvaranasi.com</a>, maybe we can work together.</p>
+
+      <h1> Previously </h1>
+      <p> Founder, CTO @ Lunar Wireless </p>
+      <p> Software Engineering @ Monmouth Telecom </p>
+
     </div>
     <div class="right">
-      <h1> Experience & Projects </h1>
+      <h1> 💯 Experience & Projects </h1>
       <div class="xp-block">
         <h4> <a target="_blank" href="https://lunarwireless.com">Lunar Wireless</a> - Founder, CTO </h4> 
         Founded and led the engineering team from 2015 to 2018. I had a hand in all parts of the technology,
